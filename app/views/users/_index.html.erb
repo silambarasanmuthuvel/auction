@@ -1,4 +1,4 @@
-<table>
+<table cellpadding="100" border= "1px solid black"; bgcolor="#f0f8ff">
     <tr>
         <th> Name</th>
         <th> age</th>
@@ -10,4 +10,4 @@
     </tr>
   <% end %>
 </table>
-<%= will_paginate @users %>
+<%= will_paginate @users, :remote => true %>

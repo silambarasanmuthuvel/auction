@@ -1,0 +1,9 @@
+
+<%= form_tag('/projects', :method => :get) do %>
+  <%= select_tag(:order_by, options_for_select([ 'Category Name','Username','Project Title' ], params[:order_by])) %>
+  <%= submit_tag "Sort" %>
+<% end %>
+
+<div id="post-content" >
+  <%= render 'index', object: @users%>
+</div>
